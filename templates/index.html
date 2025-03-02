@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        form { margin: 20px auto; padding: 20px; border: 1px solid #ccc; width: 300px; }
+        input { margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h2>Upload an Image</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
